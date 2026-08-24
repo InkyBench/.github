@@ -1,0 +1,24 @@
+name: Engineering investigation
+description: Record an evidence-led technical investigation.
+title: "[Investigation]: "
+labels: ["type:research", "priority:normal", "scope:platform"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question and decision context
+      description: State the question, constraints, and why it matters.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and alternatives
+      description: Include reproducible observations, authoritative sources, and alternatives considered.
+    validations:
+      required: true
+  - type: textarea
+    id: next
+    attributes:
+      label: Recommendation or next step
+      description: Include confidence, risks, reversibility, and any human decision required.
