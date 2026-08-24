@@ -1,0 +1,24 @@
+name: Feature or capability
+description: Propose a capability with user value and acceptance evidence.
+title: "[Feature]: "
+labels: ["type:feature", "priority:normal", "scope:platform"]
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Goal and user outcome
+      description: What problem should this solve for professional developers?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Requirement and acceptance evidence
+      description: Link related requirements or describe measurable acceptance criteria.
+    validations:
+      required: true
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Architecture, security, and compatibility considerations
+      description: Known impact, alternatives, risks, or unresolved decisions.
