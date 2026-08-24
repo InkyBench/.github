@@ -1,0 +1,19 @@
+name: Documentation
+description: Report missing, incorrect, or unclear documentation.
+title: "[Docs]: "
+labels: ["type:documentation", "priority:normal", "scope:docs"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Documentation need
+      description: Identify the page or topic and describe what is unclear, missing, or inaccurate.
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: Audience and expected outcome
+      description: Who is affected and what should they be able to do or understand?
+    validations:
+      required: true
