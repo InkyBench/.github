@@ -1,0 +1,26 @@
+name: Architecture
+description: Propose or record an architectural decision or boundary change.
+title: "[Architecture]: "
+labels: ["type:architecture", "priority:normal", "scope:platform"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and affected requirements
+      description: Link relevant requirements, decisions, contracts, and boundaries.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal and alternatives
+      description: Describe the proposed change, alternatives, trade-offs, and reversibility.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Compatibility, security, and verification plan
+      description: State expected migration, test evidence, and required human review.
+    validations:
+      required: true
