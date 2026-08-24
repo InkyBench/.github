@@ -1,0 +1,29 @@
+name: Bug report
+description: Report a reproducible problem in InkyBench.
+title: "[Bug]: "
+labels: ["type:bug", "priority:normal", "scope:platform"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include secrets, personal data, or security-vulnerability details. Use private vulnerability reporting for security issues."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Observed behavior
+      description: What happened, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction and evidence
+      description: Minimal steps, relevant version/commit, logs with secrets removed, and test evidence.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I have removed secrets and have not disclosed a security vulnerability.
+          required: true
